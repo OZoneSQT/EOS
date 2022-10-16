@@ -1,0 +1,89 @@
+Import variable
+	subscript.sh		export myvar=horse
+						echo $myvar
+	
+	script.sh			cat subscript.sh
+						myvar=cow
+						echo "script 1: $myvar"
+						. subscript.sh				// returns echo from subscript.sh, and overwrites myvar
+						echo "script 2: $myvar"
+						
+	output:				bash script		=>		script 1: cow
+												horse
+												script 2: horse	
+
+
+// Redirection with the “>” symbol overwrites the content of the destination:
+						echo original > demo.txt		// adds the text "original" to demo.txt
+						cat demo.txt
+						echo new > demo.txt				// replaces the text in demo.txt to "new"
+						cat demo.txt
+
+// Redirection with the “>>” symbol appends to the destination:
+
+
+						echo additional 1 >> demo.txt	// writes and add "additional 1" to demo.txt
+						echo additional 2 >> demo.txt	// writes and add "additional 2" to demo.txt
+						cat demo.txt
+						
+Special Parameters
+$* represents the command line arguments
+$@ as $*, but splits words into separate
+arguments when used in double quotes
+$# Count of the command-line arguments
+$$ represents process ID
+$! last process that ran in the background
+$? exit status of last process						
+						
+Transformation of command-line before it is passed to the program
+Done in the following order:
+1. Brace expansion
+2. Tilde expansion
+3. Parameter expansion
+4. Variable expansion
+5. Command substitution
+6. Arithmetic expansion
+7. Word splitting
+8. Pathname expansion
+
+
+if else:
+			echo -n "Guess an integer: "	// -n must be an integer
+			read input
+			if [ $input -lt 5 ]				// lower than
+			then
+			echo "$input is to low"
+			elif [ $input -eq 5 ]			// equal
+			then
+			echo "$input match"
+			elif [ $input -gt  5 ]			// grater than
+			then
+			echo "$input is to high"
+			else
+			echo "something went wrong"
+			fi
+			
+
+if else ( comparing strings )
+			echo "Type led1, led2 or led3"
+			read input
+			if [ ${input} == "led1" ]
+			then
+			echo "led1 is selected"
+			elif [ ${input} == "led2" ]
+			then
+			echo "led2 is selected"
+			elif [ ${input} == "led3" ]
+			then
+			echo "led3 is selected"
+			else
+			echo "something went wrong"
+			fi
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Blink on Beaglebone", "Blink on Beaglebone.vcxproj", "{A3755DF7-B396-4B0F-8130-FCE23809DF89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Debug|ARM.Build.0 = Debug|ARM
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Debug|ARM.Deploy.0 = Debug|ARM
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Debug|ARM64.Build.0 = Debug|ARM64
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Release|ARM.ActiveCfg = Release|ARM
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Release|ARM.Build.0 = Release|ARM
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Release|ARM.Deploy.0 = Release|ARM
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Release|ARM64.ActiveCfg = Release|ARM64
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Release|ARM64.Build.0 = Release|ARM64
+		{A3755DF7-B396-4B0F-8130-FCE23809DF89}.Release|ARM64.Deploy.0 = Release|ARM64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {007E0836-9AA5-4149-A177-CE970B7B8134}
+	EndGlobalSection
+EndGlobal

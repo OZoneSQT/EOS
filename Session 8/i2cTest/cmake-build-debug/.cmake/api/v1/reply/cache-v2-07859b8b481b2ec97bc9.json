@@ -2,42 +2,6 @@
 	"entries" : 
 	[
 		{
-			"name" : "Assignment_2_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/GitHub/EOS/Assignment 2/cmake-build-debug"
-		},
-		{
-			"name" : "Assignment_2_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Assignment_2_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/GitHub/EOS/Assignment 2"
-		},
-		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -91,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/GitHub/EOS/Assignment 2/cmake-build-debug"
+			"value" : "d:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -659,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/GitHub/EOS/Assignment 2"
+			"value" : "D:/GitHub/EOS/Session 8/i2cTest"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -671,7 +635,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/Assignment_2"
+			"value" : "C:/Program Files (x86)/i2cTest"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -887,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Assignment_2"
+			"value" : "i2cTest"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1264,6 +1228,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "i2cTest_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug"
+		},
+		{
+			"name" : "i2cTest_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "i2cTest_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/GitHub/EOS/Session 8/i2cTest"
 		}
 	],
 	"kind" : "cache",

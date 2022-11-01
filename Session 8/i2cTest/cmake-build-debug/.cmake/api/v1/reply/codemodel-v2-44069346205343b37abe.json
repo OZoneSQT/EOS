@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug",
-		"source" : "D:/GitHub/EOS/Session 8/i2cTest"
+		"build" : "E:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug",
+		"source" : "E:/GitHub/EOS/Session 8/i2cTest"
 	},
 	"version" : 
 	{

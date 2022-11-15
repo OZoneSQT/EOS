@@ -14,6 +14,7 @@ using namespace std;
 
 namespace exploringBB {
 
+
     // most/least significant bits
     unsigned short combineRegisters(unsigned char msb, unsigned char lsb) {
         // Shift the MSB left by 8 bits and or with LSB
@@ -25,9 +26,9 @@ namespace exploringBB {
     }
 
     void HIH8120::calculateTemperature() {
-        this->temperature = (float)(temperatureRAW)
+        this->temperature = (float)(temperatureRAW) * 165 / 16382 - 40;
     }
-    
+
     HIH8120::HIH8120(unsigned int I2CBus, unsigned int I2CAddress) : I2CDevice(I2CBus, I2CAddress) {
         this->I2CAddress = I2CAddress;
         this->I2CBus = I2CBus;

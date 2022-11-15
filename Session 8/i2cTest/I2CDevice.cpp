@@ -80,6 +80,7 @@ namespace exploringBB {
             perror("I2C: failed to open the bus\n");
             return 1;
         }
+        // I2C_SLAVE changed to name
         if(ioctl(this->file, I2C_SLAVE, this->device) < 0){
             perror("I2C: Failed to connect to the device\n");
             return 1;

@@ -7,6 +7,9 @@
 
 #include "I2CDevice.h"
 
+/// The ADXL345 has 0x40 registers (0x01 to 0x1C are reserved and should not be accessed)
+#define BUFFER_SIZE 0x40
+
 namespace exploringBB {
     class HIH8120: protected I2CDevice {
 

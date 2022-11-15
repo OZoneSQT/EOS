@@ -103,9 +103,6 @@
 		<Unit filename="E:/GitHub/EOS/Session 8/i2cTest/main.cpp">
 			<Option target="i2cTest"/>
 		</Unit>
-		<Unit filename="E:/GitHub/EOS/Session 8/i2cTest/settings.h">
-			<Option target="i2cTest"/>
-		</Unit>
 		<Unit filename="E:/GitHub/EOS/Session 8/i2cTest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -2,7 +2,6 @@
 #include <unistd.h>
 #include <pthread.h>
 #include "HIH8120.h"
-//#include "BMP180.h"
 #include <stdio.h>
 #include <iomanip>
 

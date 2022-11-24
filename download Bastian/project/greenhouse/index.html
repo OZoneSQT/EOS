@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greenhouse with BBB</title>
+</head>
+<body>
+    <p>Temperature: </p>
+
+    <p>Humidit: </p>
+
+    <p>Light Intensity: </p>
+
+    <p>Windows Position: </p>
+
+    <p>Heater Status: </p>
+
+    <p>Set Light Intensity: </p>
+
+    <p>Set Windows Position: </p>
+
+    <p>Set Heater Status: </p>
+
+    <script src = "/socket.io/socket.io.js" ></script>
+    <script>
+        /* JS socket.io script here */
+
+        // Establishing connection with server
+        var socket = io.connect();
+
+        // Function that every five seconds to get the latest data from the server
+        function refreshData() {
+            //What data it sends is not important
+            socket.emit('refreshData', {state:1});
+        }
+        // Call to make function repeating
+        const createClock = setInterval(refreshData, 5000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+#!/bin/bash
+# $1 is [led], $2 is [mode] and $3 is [periode]
+
+funct_help () {
+	echo ''
+	echo "How to use : bash NAME [led] [mode] [periode]"
+	echo "[led] : led0, led1, led2, led3, all"
+	echo "[mode] : on, off, heartbeat, blink, default"
+	echo "[periode] : if [mode] is blink, tell the periode of your blink in ms"
+	echo ''
+}
+
+funct_led () {
+	if [[ $1 = "all" ]]
+		then
+		if [[ $2 = "blink"]]
+		then
+echo "x"
+		else
+echo "y"
+		fi
+	else
+		if [[ $2 = "blink" ]]
+		then
+echo "x"
+		else
+echo "y"
+		fi
+	fi
+}
+
+if [[ $1 = "-h" || $1 = "--h" || $1 = "-help" ]]
+	then
+	funct_help
+elif [[ $# < 2 ]]
+	then
+	echo "ERROR :Not enough arguments"
+	funct_help
+else
+	if [[ $1 = "all" || $1 = "led0" || $1 = "led1" || $1 = "led2" || $1 = "led3" ]]
+		then
+		if [[ $2 = "on" || $2 = "off" || $2 = "heartbeat" || $2 = "blink" || $2 = "default" ]]
+			then
+			funct_led "$1" "$2" "$3"
+		else
+			echo "ERROR : wrong 2nd parameter"
+			funct_help
+		fi
+	else
+		echo "ERROR : wrong 1st parameter"
+		funct_help
+	fi
+fi
+

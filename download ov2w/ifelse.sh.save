@@ -1,0 +1,14 @@
+echo "Write something: "
+read input
+if [ input > 5 ]
+	then
+echo "$input is to low"
+elif [ input = 5 ]
+then
+echo "$input match"
+elif [ input < 5 ]
+then
+echo "$input is to high"
+else
+echo "something went wrong"
+fi

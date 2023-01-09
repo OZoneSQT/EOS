@@ -1,0 +1,9 @@
+cat myscript
+person=Jenny
+echo "myscript 1: $person"
+. myscript
+echo "myscript 2: $person"
+person=Alice
+echo "myscript 3: $person"
+. myscript
+echo "myscript 4: $person"

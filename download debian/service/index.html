@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OV2W - Home Automation Web Server with BeagleBone</title>
+		<script src = "/socket.io/socket.io.js" ></script>
+		<script>
+			// Establishing connection with server
+			var socket = io.connect(); /* global io */
+
+			// Changes the USR0 state
+			function changeState(state){
+				if (state==01){
+					// Emit message changing the state to 1
+					socket.emit('changeState0', '{"state":1}');
+					// Change led status on web page to ON
+					document.getElementById("outputStatus0").innerHTML = "Status: ON";
+				} else if (state==00){
+					// Emit message changing the state to 0
+					socket.emit('changeState0', '{"state":0}');
+					// Change led status on web page to OFF
+					document.getElementById("outputStatus0").innerHTML = "Status: OFF";
+				} else if (state==11){
+					// Emit message changing the state to 1
+					socket.emit('changeState1', '{"state":1}');
+					// Change led status on web page to ON
+					document.getElementById("outputStatus1").innerHTML = "Status: ON";
+				} else if (state==10){
+					// Emit message changing the state to 0
+					socket.emit('changeState1', '{"state":0}');
+					// Change led status on web page to OFF
+					document.getElementById("outputStatus1").innerHTML = "Status: OFF";
+				} else if (state==21){
+					// Emit message changing the state to 1
+					socket.emit('changeState2', '{"state":1}');
+					// Change led status on web page to ON
+					document.getElementById("outputStatus2").innerHTML = "Status: ON";
+				} else if (state==20){
+					// Emit message changing the state to 0
+					socket.emit('changeState2', '{"state":0}');
+					// Change led status on web page to OFF
+					document.getElementById("outputStatus2").innerHTML = "Status: OFF";
+				} else if (state==31){
+					// Emit message changing the state to 1
+					socket.emit('changeState3', '{"state":1}');
+					// Change led status on web page to ON
+					document.getElementById("outputStatus3").innerHTML = "Status: ON";
+				} else if (state==30){
+					// Emit message changing the state to 0
+					socket.emit('changeState3', '{"state":0}');
+					// Change led status on web page to OFF
+					document.getElementById("outputStatus3").innerHTML = "Status: OFF";
+				}
+			}
+			
+		</script>	
+
+	</head>
+	
+	<body>
+
+		<div>
+			<h2>LED 0</h2>
+			<p id="outputStatus0">Status</p>
+			<button type="button" onclick="changeState(00);">OFF</button>
+			<button type="button" onclick="changeState(01);">ON</button>
+		</div>
+
+		<div>
+			<h2>LED 1</h2>
+			<p id="outputStatus1">Status</p>
+			<button type="button" onclick="changeState(10);">OFF</button>
+			<button type="button" onclick="changeState(11);">ON</button>
+		</div>
+		
+		<div>
+			<h2>LED 2</h2>
+			<p id="outputStatus2">Status</p>
+			<button type="button" onclick="changeState(20);">OFF</button>
+			<button type="button" onclick="changeState(21);">ON</button>
+		</div>
+		
+		<div>
+			<h2>LED 3</h2>
+			<p id="outputStatus3">Status</p>
+			<button type="button" onclick="changeState(30);">OFF</button>
+			<button type="button" onclick="changeState(31);">ON</button>
+		</div>
+
+	</body>
+</html>

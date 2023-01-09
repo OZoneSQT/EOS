@@ -1,0 +1,7 @@
+sudo chmod a+rwx on
+sudo chmod a+rwx off
+sudo chmod a+rwx default
+sudo chmod a+rwx heartbeat
+sudo chmod a+rwx blink
+sudo chmod a+rwx script_test
+ls -l

@@ -1,0 +1,10 @@
+echo -n "Enter frequency: "
+read hz
+p=1000/$hz
+ms=$p/2
+#Blink
+#echo timer > /sys/class/leds/beaglebone\:green\:usr0/trigger | sudo chmod a+rwx delay_on | sudo chmod a+rwx delay_off | sudo echo $ms > delay_on | sudo echo $ms > delay_off
+#echo timer > /sys/class/leds/beaglebone\:green\:usr1/trigger | sudo chmod a+rwx delay_on | sudo chmod a+rwx delay_off | sudo echo $ms > delay_on | sudo echo $ms > delay_off
+#echo timer > /sys/class/leds/beaglebone\:green\:usr2/trigger | sudo chmod a+rwx delay_on | sudo chmod a+rwx delay_off | sudo echo $ms > delay_on | sudo echo $ms > delay_off
+echo timer > /sys/class/leds/beaglebone\:green\:usr3/trigger | sudo chmod a+rwx delay_on | sudo chmod a+rwx delay_off | sudo echo $ms > delay_on | sudo echo $ms > delay_off
+echo "blink script executed"

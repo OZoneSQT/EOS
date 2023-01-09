@@ -1,0 +1,9 @@
+echo original > demo.txt
+cat demo.txt
+
+echo new > demo.txt
+cat demo.txt
+
+echo additional 1 >> demo.txt
+echo additional 2 >> demo.txt
+cat demo.txt

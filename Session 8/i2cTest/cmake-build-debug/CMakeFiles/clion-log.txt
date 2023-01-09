@@ -1,4 +1,0 @@
-C:\Users\skrue\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\222.4345.21\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "E:\GitHub\EOS\Session 8\i2cTest" -B "E:\GitHub\EOS\Session 8\i2cTest\cmake-build-debug"
--- Configuring done
--- Generating done
--- Build files have been written to: E:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug

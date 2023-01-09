@@ -1,3 +1,0 @@
-E:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug/CMakeFiles/i2cTest.dir
-E:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/GitHub/EOS/Session 8/i2cTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
